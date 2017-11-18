@@ -1,0 +1,16 @@
+﻿<Window x:Class="PngIconCreator.UrlWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PngIconCreator"
+        mc:Ignorable="d"
+        Title="URL" Width="640" SizeToContent="Height">
+    <StackPanel>
+        <TextBox Margin="2" Name="UrlTxt" TextChanged="OnUrlChanged"/>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button Name="OkBtn" Content="OK" IsDefault="True" IsEnabled="False" Click="OnOkClick"/>
+            <Button Content="Cancel" IsCancel="True"/>
+        </StackPanel>
+    </StackPanel>
+</Window>
